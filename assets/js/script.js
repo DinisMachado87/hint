@@ -54,7 +54,7 @@ var wordClasses = {
     return wordArray[randomIndex];
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
+ function newSentence() {
     var wordDivs = document.querySelectorAll(".word");
   
     wordDivs.forEach(function (div) {
@@ -70,4 +70,11 @@ var wordClasses = {
       // Fill the div with a random word from the selected array
       div.textContent = getRandomWord(wordArray);
     });
-  });
+  };
+
+//formulates a sentence on loading
+document.addEventListener("DOMContentLoaded", newSentence);
+
+// Listen to reformulate button and refresh the sentence
+var reformulate = document.getElementById("reformulate"); 
+reformulate.addEventListener("click", newSentence);
