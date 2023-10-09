@@ -27,6 +27,10 @@ html, body {
     justify-content: space-between;
   }
 
+  .capitalized-div {
+    text-transform: capitalize;
+  }
+
   .word {
     display: inline-block;
     padding: 10px;
@@ -34,6 +38,7 @@ html, body {
   }
 
   button {
+    font-size: 8px;
     position: fixed;
     bottom: 20px;
     text-align: center;
@@ -42,3 +47,12 @@ html, body {
     background-color: blue;
     color: white;
   }
+
+  #logo {
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    left: 50%
+    text-align: center;
+  }
+
