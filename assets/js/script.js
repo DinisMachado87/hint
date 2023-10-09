@@ -23,17 +23,15 @@ var wordClasses = {
       "dissolving", "transcending", "whispering", "weaving", "morphing", "shattering", "drifting", "echoing", "stretching", "unraveling",
       "enchanting", "surrendering", "manifesting", "defying", "hovering", "awakening", "merging", "suspending", "reverberating", "unfolding"
     ],
-    adjective: [
-      "happy", "red", "tall", "beautiful", "quick", "smart", "funny", "bright", "loud", "gentle",
-      "colorful", "peaceful", "exciting", "mysterious", "magnificent", "delicious", "vibrant", "creative", "calm", "energetic",
-      "timeless", "luminous", "surreal", "hypnotic", "transcendent", "illusory", "fluid", "sensory", "infinite", "ephemeral",
-      "enigmatic", "suspended", "hypnagogic", "whimsical", "ethereal", "melting", "intriguing", "metamorphic", "enigmatic", "surrealistic"
-    ],
     adverb: [
       "quickly", "loudly", "very", "well", "often", "suddenly", "silently", "carefully", "always", "never",
       "happily", "slowly", "badly", "loudly", "easily", "gracefully", "quietly", "patiently", "frequently", "gently",
       "beyond", "within", "amidst", "twistedly", "hypnotically", "whisperingly", "unconventionally", "dreamily", "timelessly", "surreally",
-      "impossibly", "luminously", "ethereally", "absurdly", "unpredictably", "deliriously", "sensationally", "miraculously", "chaotically", "inexplicably"
+      "impossibly", "luminously", "ethereally", "absurdly", "unpredictably", "deliriously", "sensationally", "miraculously", "chaotically", "inexplicably",
+      "happily", "quickly", "loudly", "beautifully", "quickly", "smartly", "funnily", "brightly", "loudly", "gently",
+      "colorfully", "peacefully", "excitingly", "mysteriously", "magnificently", "deliciously", "vibrantly", "creatively", "calmly", "energetically",
+      "timelessly", "luminously", "surreally", "hypnotically", "transcendently", "illusorily", "fluidly", "sensory", "infinitely", "ephemerally",
+      "enigmatically", "suspendedly", "hypnagogically", "whimsically", "ethereally", "meltingly", "intriguingly", "metamorphically", "enigmatically", "surrealistically"
     ],
     conjunction: [
       "and", "but", "or", "so", "while", "although", "because", "if", "when", "while",
