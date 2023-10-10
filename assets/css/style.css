@@ -58,3 +58,106 @@ html, body {
     text-align: center;
   }
 
+  #instructions {
+    width: 60%;
+    font-size: 8px;
+    position: absolute;
+    top: 70px;
+    left: 50%
+    text-align: center;
+  }
+
+  #instructions p {
+    text-align: center;
+    color: gray;
+  }
+
+
+  @media (min-width: 650px) {
+    html, body {
+      font-size: 18px;
+      margin: 18px;
+      padding: 18px;
+    }
+    
+    #windowBorder {
+      top: 18px;
+      right: 18px;
+      bottom: 11px;
+      left: 18px;
+      padding: 18px;
+      border: 3px solid red;
+    }
+    
+    #sentence {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+    
+    .word {
+      padding: 18px;
+      margin: 13px -2;
+    }
+    
+    button {
+      font-size: 14px;
+      bottom: 28px;
+      padding: 7px;
+      border: 3px solid blue;
+    }
+    
+    #logo {
+      font-size: 26px;
+      top: 21px;
+    }
+    
+    #instructions {
+      font-size: 15px;
+      top: 112px;
+    }    
+  }
+
+  @media (min-width: 1500px) {
+
+    html, body {
+      font-size: 25px ;    
+      margin: 25px;
+      padding: 25px;
+    }
+    
+    #windowBorder {
+      top: 25px;
+      right: 25px;
+      bottom: 15px;
+      left: 25px;
+      padding: 25px;
+      border: 3px solid red;
+    }
+  
+    #sentence {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  
+    .word {
+      padding: 25px;
+      margin: 15px -2px;
+    }
+  
+    button {
+      font-size: 20px;
+      bottom: 40px;
+      padding: 10px;
+      border: 3px solid blue;
+    }
+  
+    #logo {
+      font-size: 37px;
+      top: 30px;
+    }
+  
+    #instructions {
+      font-size: 22px;
+      top: 160px;
+    }
+  }
