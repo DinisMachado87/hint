@@ -68,7 +68,7 @@ var wordClasses = {
   };
   
 
- function newSentence() {
+  function newSentence() {
     var wordDivs = document.querySelectorAll(".word");
     wordDivs.forEach(function (div) {
       var classNames = div.classList; // Get all the classes
@@ -80,10 +80,16 @@ var wordClasses = {
           return; // Stop searching once a corresponding class is found
         }
       });
-      // Fill the div with a random word from the selected array
-      div.textContent = getRandomWord(wordArray);
+      // Check if the text content is equal to the className
+      if (div.textContent === classNames[1]) {
+        // Fill the div with a random word from the selected array
+        div.textContent = getRandomWord(wordArray);
+      }
     });
   };
+
+
+
 //formulates a sentence on loading
 document.addEventListener("DOMContentLoaded", instructions);
 
