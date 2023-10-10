@@ -36,7 +36,7 @@ html, body {
     padding: 10px;
     white-space: nowrap;
     background-color: yellow;
-    margin: 5px -3px;
+    margin: 5px -4px;
   }
 
   button {
@@ -96,7 +96,7 @@ html, body {
     
     .word {
       padding: 18px;
-      margin: 13px -3;
+      margin: 13px -4;
     }
     
     button {
@@ -141,7 +141,7 @@ html, body {
   
     .word {
       padding: 25px;
-      margin: 15px -3px;
+      margin: 15px -4px;
     }
   
     button {
