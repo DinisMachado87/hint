@@ -52,9 +52,24 @@ var wordClasses = {
     return wordArray[randomIndex];
   }
 
+
+  function instructions() {
+    var wordDivs = document.querySelectorAll(".word");
+    wordDivs.forEach(function (div) {
+      var classNames = div.classList; // Get all the classes
+      var wordArray = [];
+      // Iterate through the class names to find the corresponding word class
+      classNames.forEach(function (className) {
+        if (wordClasses.hasOwnProperty(className)) {
+        div.textContent = className;
+        }
+      })
+    });
+  };
+  
+
  function newSentence() {
     var wordDivs = document.querySelectorAll(".word");
-  
     wordDivs.forEach(function (div) {
       var classNames = div.classList; // Get all the classes
       var wordArray = [];
@@ -69,9 +84,8 @@ var wordClasses = {
       div.textContent = getRandomWord(wordArray);
     });
   };
-
 //formulates a sentence on loading
-document.addEventListener("DOMContentLoaded", newSentence);
+document.addEventListener("DOMContentLoaded", instructions);
 
 // Listen to reformulate button and refresh the sentence
 var reformulate = document.getElementById("reformulate"); 
