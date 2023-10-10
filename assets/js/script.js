@@ -61,7 +61,7 @@ var wordClasses = {
       // Iterate through the class names to find the corresponding word class
       classNames.forEach(function (className) {
         if (wordClasses.hasOwnProperty(className)) {
-        div.textContent = className;
+        div.textContent = "+   " + className;
         }
       })
     });
@@ -84,7 +84,7 @@ var wordClasses = {
         }
       });
       // Check if the text content is equal to the className
-      if (div.textContent === classNames[1]) {
+      if (div.textContent === "+   " + classNames[1]) {
         // Fill the div with a random word from the selected array
         div.textContent = getRandomWord(wordArray);
       }
