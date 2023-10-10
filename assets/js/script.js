@@ -52,6 +52,8 @@ var wordClasses = {
     return wordArray[randomIndex];
   }
 
+  var instructionsDiv = document.getElementById("instructions");
+  var paragraphElement = instructionsDiv.querySelector("p");
 
   function instructions() {
     var wordDivs = document.querySelectorAll(".word");
@@ -68,6 +70,7 @@ var wordClasses = {
         // Change the button text content to "REFORMULATE"
         var button = document.querySelector("button");
         button.textContent = "REFORMULATE";
+        paragraphElement.textContent = "Type some words you want to use and press REFORMULATE to complete the sentence, or simply click REFORMULATE for a random sentence.";
   };
   
 
@@ -93,6 +96,9 @@ var wordClasses = {
     // Change the button text content to "RESET"
     var button = document.querySelector("button");
     button.textContent = "RESET";
+
+    paragraphElement.textContent = " ";
+
   };
 
 
