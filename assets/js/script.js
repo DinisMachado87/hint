@@ -65,6 +65,9 @@ var wordClasses = {
         }
       })
     });
+        // Change the button text content to "REFORMULATE"
+        var button = document.querySelector("button");
+        button.textContent = "REFORMULATE";
   };
   
 
@@ -86,6 +89,10 @@ var wordClasses = {
         div.textContent = getRandomWord(wordArray);
       }
     });
+  
+    // Change the button text content to "RESET"
+    var button = document.querySelector("button");
+    button.textContent = "RESET";
   };
 
 
@@ -95,4 +102,11 @@ document.addEventListener("DOMContentLoaded", instructions);
 
 // Listen to reformulate button and refresh the sentence
 var reformulate = document.getElementById("reformulate"); 
-reformulate.addEventListener("click", newSentence);
+reformulate.addEventListener("click", function() {
+  var button = document.querySelector("button");
+  if (button.textContent === "RESET") {
+    instructions();
+  } else if (button.textContent === "REFORMULATE") {
+    newSentence();
+  }
+});
