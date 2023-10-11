@@ -1,39 +1,105 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Alt text](Documentation/responsive.png)
 
-Welcome,
+# hint
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Hint is an app designed for writers and creatives. It allows users to generate surrealistic fictional sentences to kickstart their writing, overcome writer's block, or engage in playful creative exercises.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+Users can either generate a sentence composed of random words that form a readable but fictional, open ended and playfull sentence, or they can type in some of the words they need new perspectives on to create a sentence that combines their input with other randomly selected words opening new meanings and possibilities.
 
-## Codeanywhere Reminders
+![instructions](Documentation/nav.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Features
 
-`python3 -m http.server`
+### Layout
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+With a simple and open layout we search that the app layout has a feealing of open space creating a calm and claer feeling for confort and creativeness. With a simple red margin around the browser the page resembles a flashcard or a card from classical boardgames.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+### Logo
 
-`http_server`
+Featured at the top of all pages, there is a simple logo creating identity to the page but quite simple for a feeling of uncluterness.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Navigation
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+The navigation is included inside the header, and its elements rearrange for different screen sizes between a horizontal line and two versions of a more vertical block to safeguard the proportions of the hero image.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Navigation](Documentation/nav.png)
 
-To log into the Heroku toolbelt CLI:
+### Body
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The body of the page has a margin around its elements to separate it from the marginless header. It was thought of as a table or surface where elements are displayed. Throughout the different pages, the elements assume different configurations adapting to the kind and number of content to be displayed.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Build a Shed! (Welcome Message)
 
----
+When clicking on the logo, the user is taken back to the welcome message, which is the index page. Here, a welcome message sets a personal and caring tone to the website. The page has one single block of text as if it was a paper letter.
 
-Happy coding!
+![Welcome Message](Documentation/welcome.png)
+
+### Instructions
+
+The instructions page includes a series of instructions on how to build the shed. Each instruction is contained within a block with an image and a text section that, depending on screen sizes, will be shown side by side or one after the other.
+
+![Instructions](Documentation/instructions.png)
+
+### Shopping List
+
+The Shopping List page contains two boxes containing a series of lists of everything needed to realize the project. The boxes include a black margin resembling post-it notes or a paper with annotations. The boxes appear side by side on wider screens, preventing unnecessary scrolling, and one over the other on narrower screens to fit the available space without losing readability.
+
+![Shopping List](Documentation/list.png)
+
+### Gallery
+
+The Gallery Page hosts a series of images submitted by the users of built versions of the shed. The number of pictures per row in the gallery adapts through different screen sizes to fit the screen.
+
+![Gallery](Documentation/gallery.png)
+
+### Submit your Shed!
+
+The Submit your shed page hosts a simple form for the users to submit photos of their built versions for the gallery, as well as comments and questions.
+
+![Submit your Shed](Documentation/form.png)
+
+## Testing
+
+I tested that the website works in different browsers: Chrome, Firefox, Safari.
+
+I used devtools and [Am I Responsive tester](https://ui.dev/amiresponsive) to confirm that the website is responsive, looks, and functions as it is supposed to on all standard screen sizes.
+
+I tested all the links and confirmed that all of them work and lead where they are supposed to lead.
+
+## Bugs
+
+I encountered bugs of adaptation of the navigation bar to different screen formats and have run several series of code editing and testing to solve them.
+
+### Unsolved bugs
+
+No unsolved bugs.
+
+## Validator Testing
+
+### HTML
+
+No errors or warnings were found when passing through the official W3C validator.
+
+### CSS
+
+No errors or warnings were found when passing through the official W3C (Jigsaw) validator.
+
+![CSS Validation](Documentation/css.png)
+
+### Accessibility and Performance
+
+Using Lighthouse in devtools, I confirmed that the website is performing well, accessible, and the colors and fonts chosen are readable.
+
+![Accessibility and Performance](Documentation/acessibility_performance.png)
+
+## Deployment
+
+The website was deployed to GitHub pages and can be accessed by the link: [Build a Shed!](https://dinismachado87.github.io/buildashed-main/index.html)
+
+## Credits
+
+Gallery images taken from [Unsplash](https://unsplash.com/)
+
+3D cottage simulation and instruction images drawn by me in [SketchUp](https://www.sketchup.com/)
+
+Input on Flexbox from the YouTube channel of [Kevin Powell](https://www.youtube.com/user/KepowOb)

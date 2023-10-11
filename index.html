@@ -7,32 +7,43 @@
         <title>Document</title>
     </head>
     <body>
+            <div id="windowBorder">
+                
+                <header>
+                    <div id="logo">
+                        <h2>hint</h2>
+                    </div>
+                    <div id="instructions">
+                        <p>Type some words you want to use, and then press "REFORMULATE" to complete the sentence. Alternatively, you can click "REFORMULATE" for a random sentence.</p>
+                    </div>
+                </header>
 
-        <div id="windowBorder">
-            <div id="logo"><h2>hint</h2></div>
+                <section>                            
+                    <div id="sentence">
+                        <div class="word singularArticle capitalized-div" contenteditable="true"></div>
+                        <div class="word singularNoun" contenteditable="true"></div>
+                        <div class="word verb" contenteditable="true"></div>
+                        <div class="word pluralArticle" contenteditable="true"></div>
+                        <div class="word pluralNoun" contenteditable="true"></div>
+                        <div class="word preposition" contenteditable="true"></div>
+                        <div class="word singularArticle" contenteditable="true"></div>
+                        <div class="word singularNoun" contenteditable="true"></div>
+                        <div class="word preposition" contenteditable="true"></div>
+                        <div class="word pluralArticle" contenteditable="true"></div>
+                        <div class="word pluralNoun" contenteditable="true"></div>
+                        <div class="word conjunction" contenteditable="true"></div>
+                        <div class="word verb" contenteditable="true"></div>
+                        <div class="word adverb" contenteditable="true"></div>                            
+                    </div>
+                    <button type="submit" id="reformulate">REFORMULATE</button>
+                </section>
 
-            <div id="instructions"><p>tipe some words you wanna use and press REFORMULATE to coplete the sentence or simply click REFORMULATE for a random sentence </p></div>
-            
-            <div id="sentence">
-                <div class="word singularArticle capitalized-div" contenteditable="true"></div>
-                <div class="word singularNoun" contenteditable="true"></div>
-                <div class="word verb" contenteditable="true"></div>
-                <div class="word pluralArticle" contenteditable="true"></div>
-                <div class="word pluralNoun" contenteditable="true"></div>
-                <div class="word preposition" contenteditable="true"></div>
-                <div class="word singularArticle" contenteditable="true"></div>
-                <div class="word singularNoun" contenteditable="true"></div>
-                <div class="word preposition" contenteditable="true"></div>
-                <div class="word pluralArticle" contenteditable="true"></div>
-                <div class="word pluralNoun" contenteditable="true"></div>
-                <div class="word conjunction" contenteditable="true"></div>
-                <div class="word verb" contenteditable="true"></div>
-                <div class="word adverb" contenteditable="true"></div>                            
             </div>
 
-            <button type="submit" id="reformulate">REFORMULATE</button>
+            <footer>
+                <p>Copyright © 2023 Dinis Machado</p>
+            </footer>
 
-        </div>
     <script src="assets/js/script.js"></script>
     </body>
 </html>
