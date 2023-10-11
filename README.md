@@ -1,12 +1,11 @@
-![Alt text](Documentation/responsive.png)
-
 # hint
 
 Hint is an app designed for writers and creatives. It allows users to generate surrealistic fictional sentences to kickstart their writing, overcome writer's block, or engage in playful creative exercises.
 
 Users can either generate a sentence composed of random words that form a readable but fictional, open ended and playfull sentence, or they can type in some of the words they need new perspectives on to create a sentence that combines their input with other randomly selected words opening new meanings and possibilities.
 
-![instructions](Documentation/nav.png)
+![Layout](documentation/img1.png)
+![Layout](documentation/img2.png)
 
 ## Features
 
@@ -18,45 +17,9 @@ With a simple and open layout we search that the app layout has a feealing of op
 
 Featured at the top of all pages, there is a simple logo creating identity to the page but quite simple for a feeling of uncluterness.
 
-### Navigation
+### Instructions vs Sentence
 
-The navigation is included inside the header, and its elements rearrange for different screen sizes between a horizontal line and two versions of a more vertical block to safeguard the proportions of the hero image.
-
-![Navigation](Documentation/nav.png)
-
-### Body
-
-The body of the page has a margin around its elements to separate it from the marginless header. It was thought of as a table or surface where elements are displayed. Throughout the different pages, the elements assume different configurations adapting to the kind and number of content to be displayed.
-
-### Build a Shed! (Welcome Message)
-
-When clicking on the logo, the user is taken back to the welcome message, which is the index page. Here, a welcome message sets a personal and caring tone to the website. The page has one single block of text as if it was a paper letter.
-
-![Welcome Message](Documentation/welcome.png)
-
-### Instructions
-
-The instructions page includes a series of instructions on how to build the shed. Each instruction is contained within a block with an image and a text section that, depending on screen sizes, will be shown side by side or one after the other.
-
-![Instructions](Documentation/instructions.png)
-
-### Shopping List
-
-The Shopping List page contains two boxes containing a series of lists of everything needed to realize the project. The boxes include a black margin resembling post-it notes or a paper with annotations. The boxes appear side by side on wider screens, preventing unnecessary scrolling, and one over the other on narrower screens to fit the available space without losing readability.
-
-![Shopping List](Documentation/list.png)
-
-### Gallery
-
-The Gallery Page hosts a series of images submitted by the users of built versions of the shed. The number of pictures per row in the gallery adapts through different screen sizes to fit the screen.
-
-![Gallery](Documentation/gallery.png)
-
-### Submit your Shed!
-
-The Submit your shed page hosts a simple form for the users to submit photos of their built versions for the gallery, as well as comments and questions.
-
-![Submit your Shed](Documentation/form.png)
+The app works with only two situations: a first moment where a set of simple instructions of use is displayed together with the semantic structure of the sentence allowing the user to define certain desired words. And a second moment where the words that were not typed/defined by the user are replaced by random words of the specific kind needed to produce a readable sentence. In this second moment of the app the instructions disapear letting the user with a quite stripped out screen to produce the focus necessary for creative writing.
 
 ## Testing
 
