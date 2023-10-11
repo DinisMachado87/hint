@@ -2,9 +2,9 @@
 
 # hint
 
-Hint is an app designed for writers and creatives. It allows users to generate surrealistic fictional sentences to kickstart their writing, overcome writer's block, or engage in playful creative exercises.
+Hint is an application designed for writers and creatives. It empowers users to generate surrealistic fictional sentences, serving as a catalyst to jumpstart their writing, overcome writer's block, or engage in playful creative exercises.
 
-Users can either generate a sentence composed of random words that form a readable but fictional, open ended and playfull sentence, or they can type in some of the words they need new perspectives on to create a sentence that combines their input with other randomly selected words opening new meanings and possibilities.
+Users have the flexibility to either generate a sentence composed of random words, resulting in an open-ended and playful narrative, or they can input specific words, combining their choices with randomly selected words to unlock new meanings and creative possibilities.
 
 ![Layout](documentation/img1.png)
 ![Layout](documentation/img2.png)
@@ -13,15 +13,23 @@ Users can either generate a sentence composed of random words that form a readab
 
 ### Layout
 
-With a simple and open layout we search that the app layout has a feealing of open space creating a calm and claer feeling for confort and creativeness. With a simple red margin around the browser the page resembles a flashcard or a card from classical boardgames.
+The app boasts a clean and spacious layout, exuding a sense of tranquility and clarity conducive to creativity. With a simple red margin framing the page, it emulates the appearance of a flashcard or a card from classical board games.
 
-### Logo
+### Header
 
-Featured at the top of all pages, there is a simple logo creating identity to the page but quite simple for a feeling of uncluterness.
+The header complements the app's minimalistic design. A simple logo graces the top of the page, adding a touch of identity to the page while maintaining a clean and uncluttered appearance.The main title logo is intentionally presented in lowercase, symbolizing the concept of hints that both precede and follow unfinished writing, fostering an atmosphere of openness. The logo is followed by a subtitle summarizing the app's function and by short and clear instructions on how to use it.
 
 ### Instructions vs Sentence
 
-The app works with only two situations: a first moment where a set of simple instructions of use is displayed together with the semantic structure of the sentence allowing the user to define certain desired words. And a second moment where the words that were not typed/defined by the user are replaced by random words of the specific kind needed to produce a readable sentence. In this second moment of the app the instructions disapear letting the user with a quite stripped out screen to produce the focus necessary for creative writing.
+The app operates in two distinct moments: The first presents a set of straightforward usage instructions in conjunction with the sentence's semantic structure, enabling users to type desired words. In the second moment, words that weren't defined by the user are substituted with random words of the specified type, crafting a coherent and readable although poétic and open ended sentence. In this latter mode, the instructions vanish, providing a minimalistic interface that encourages focus and creativity in writing.
+
+### Footer
+
+A discreet footer contains copyright information.
+
+### Features left to implement
+
+In the future, there are plans to develop a system enabling the app to verify and incorporate user-input words into the respective word arrays. Users would have individual logins where their grammar additions would be stored, creating a personal grammar field that the app would incorporate, adding a personalized touch to the randomness.
 
 ## Testing
 
@@ -29,15 +37,15 @@ I tested that the website works in different browsers: Chrome, Firefox, Safari.
 
 I used devtools and [Am I Responsive tester](https://ui.dev/amiresponsive) to confirm that the website is responsive, looks, and functions as it is supposed to on all standard screen sizes.
 
-I tested thoroughly the button and typing functinalities and fixed all bugs until the app worked smoothly.
+Extensive testing was conducted on the button and typing functionalities, with any identified bugs addressed to ensure the app's smooth operation.
 
 ## Bugs
 
-I encountered formating bugs where spaces would appear betweens the different div's that form the yellow sentece and corrected them.
+Initial formatting bugs were encountered, leading to the appearance of spaces between different div elements forming the yellow sentence. These formatting issues were rectified through a slightly negative margin.
 
-I had also to create a independent div to style the red margin to resolve formating issues.
+An independent div was introduced to style the red margin and resolve formatting challenges.
 
-There were bugs in the crossover of the button click both generating random words from the arrays, checking div's had been typed to skip them and reformulating the lay out between the two sceneries of the app. I wanted the app to be extremely minimal to feel spacious for a writers creativity and it took some trial and error to make everything work with only one button.
+Issues were also present in the button's dual functionality, where it both generated random words from arrays and checked div elements for user-defined inputs while reformatting the layout to transition between the two app scenarios. This presented a unique challenge, as the aim was to keep the app extremely minimal to provide a spacious environment for creative writers. Multiple iterations were required to ensure that everything worked seamlessly with just one button.
 
 ### Unsolved bugs
 
@@ -49,7 +57,7 @@ No unsolved bugs.
 
 No errors or warnings were found when passing through the official W3C validator.
 
-![HTML Validation](documentation/htmlchecker.png)
+![HTML Validation](Documentation/css.png)
 
 ### CSS
 
@@ -61,16 +69,12 @@ No errors or warnings were found when passing through the official W3C (Jigsaw) 
 
 Using Lighthouse in devtools, I confirmed that the website is performing well, accessible, and the colors and fonts chosen are readable.
 
-![Accessibility and Performance](Documentation/acessibility_performance.png)
+![Accessibility and Performance](documentation/lighthouse.png)
 
 ## Deployment
 
-The website was deployed to GitHub pages and can be accessed by the link: [Build a Shed!](https://dinismachado87.github.io/buildashed-main/index.html)
+The website was deployed to GitHub pages and can be accessed by the link: [hint](https://dinismachado87.github.io/hint/)
 
 ## Credits
-
-Gallery images taken from [Unsplash](https://unsplash.com/)
-
-3D cottage simulation and instruction images drawn by me in [SketchUp](https://www.sketchup.com/)
 
 Input on Flexbox from the YouTube channel of [Kevin Powell](https://www.youtube.com/user/KepowOb)
