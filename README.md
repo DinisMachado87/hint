@@ -1,3 +1,5 @@
+![Responsive_test](documentation/responsive.png)
+
 # hint
 
 Hint is an app designed for writers and creatives. It allows users to generate surrealistic fictional sentences to kickstart their writing, overcome writer's block, or engage in playful creative exercises.

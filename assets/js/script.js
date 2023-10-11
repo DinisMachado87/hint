@@ -12,7 +12,7 @@ const wordClasses = {
       "phantom staircases", "velvet fogs", "timeless voids", "cosmic paradoxes", "dreaming moons", "impossible cityscapes", "silent echoes", "ethereal nightmares"
     ],
     singularArticle: [
-      "the", "a", "an", "this", "that", "my", "your", "his", "her", "its", "our", "their"
+      "the", "this", "that", "my", "your", "his", "her", "its", "our", "their"
     ],
     pluralArticle: [
       "the", "these", "those", "my", "your", "his", "her", "its", "our", "their"
