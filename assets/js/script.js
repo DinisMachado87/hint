@@ -1,4 +1,4 @@
-var wordClasses = {
+const wordClasses = {
     singularNoun: [
       "cat", "dog", "house", "car", "book", "computer", "ball", "tree", "flower", "friend",
       "beach", "sun", "moon", "star", "ocean", "river", "mountain", "city", "food", "music",
@@ -48,18 +48,18 @@ var wordClasses = {
   };
   
   function getRandomWord(wordArray) {
-    var randomIndex = Math.floor(Math.random() * wordArray.length);
+    let randomIndex = Math.floor(Math.random() * wordArray.length);
     return wordArray[randomIndex];
   }
 
-  var instructionsDiv = document.getElementById("instructions");
-  var paragraphElement = instructionsDiv.querySelector("p");
+  const instructionsDiv = document.getElementById("instructions");
+  const paragraphElements = instructionsDiv.querySelectorAll("p");
 
   function instructions() {
-    var wordDivs = document.querySelectorAll(".word");
+    let wordDivs = document.querySelectorAll(".word");
     wordDivs.forEach(function (div) {
-      var classNames = div.classList; // Get all the classes
-      var wordArray = [];
+      let classNames = div.classList; // Get all the classes
+      let wordArray = [];
       // Iterate through the class names to find the corresponding word class
       classNames.forEach(function (className) {
         if (wordClasses.hasOwnProperty(className)) {
@@ -68,17 +68,21 @@ var wordClasses = {
       })
     });
         // Change the button text content to "REFORMULATE"
-        var button = document.querySelector("button");
+        let button = document.querySelector("button");
         button.textContent = "REFORMULATE";
-        paragraphElement.textContent = "Type some words you want to use and press REFORMULATE to complete the sentence, or simply click REFORMULATE for a random sentence.";
-  };
+        instructionsDiv.innerHTML = "<h2>an app for writers and creatives.</h2>" +
+        "<hr>" +
+        "<p>It generates surrealistic fictional sentences to kickstart your writing, overcome writer's block, or engage in playful creative exercises.</p>" +
+        "<p>Type some words to use and press 'REFORMULATE' to complete the sentence.</p>" +
+        "<p>Or simply can click 'REFORMULATE' for a random sentence.</p>";
+      };
   
 
   function newSentence() {
-    var wordDivs = document.querySelectorAll(".word");
+    let wordDivs = document.querySelectorAll(".word");
     wordDivs.forEach(function (div) {
-      var classNames = div.classList; // Get all the classes
-      var wordArray = [];
+      let classNames = div.classList; // Get all the classes
+      let wordArray = [];
       // Iterate through the class names to find the corresponding word class
       classNames.forEach(function (className) {
         if (wordClasses.hasOwnProperty(className)) {
@@ -94,11 +98,9 @@ var wordClasses = {
     });
   
     // Change the button text content to "RESET"
-    var button = document.querySelector("button");
+    let button = document.querySelector("button");
     button.textContent = "RESET";
-
-    paragraphElement.textContent = " ";
-
+    instructionsDiv.innerHTML = "";
   };
 
 
@@ -107,9 +109,9 @@ var wordClasses = {
 document.addEventListener("DOMContentLoaded", instructions);
 
 // Listen to reformulate button and refresh the sentence
-var reformulate = document.getElementById("reformulate"); 
+const reformulate = document.getElementById("reformulate"); 
 reformulate.addEventListener("click", function() {
-  var button = document.querySelector("button");
+  let button = document.querySelector("button");
   if (button.textContent === "RESET") {
     instructions();
   } else if (button.textContent === "REFORMULATE") {

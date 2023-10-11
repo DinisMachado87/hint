@@ -7,18 +7,23 @@
         <title>Document</title>
     </head>
     <body>
-            <div id="windowBorder">
                 
                 <header>
                     <div id="logo">
-                        <h2>hint</h2>
+                        <h1>hint</h1>
                     </div>
                     <div id="instructions">
-                        <p>Type some words you want to use, and then press "REFORMULATE" to complete the sentence. Alternatively, you can click "REFORMULATE" for a random sentence.</p>
+                        <h2>an app for writers and creatives.</h2>
+                        <hr>
+                        <p>It generates surrealistic fictional sentences to kickstart your writing, overcome writer's block, or engage in playful creative exercises.</p>
+                        <p>Type some words to use and press "REFORMULATE" to complete the sentence.</p>
+                        <p> Or simply can click "REFORMULATE" for a random sentence.</p>
                     </div>
                 </header>
 
-                <section>                            
+                <div id="windowBorder"></div>
+
+                <main>                            
                     <div id="sentence">
                         <div class="word singularArticle capitalized-div" contenteditable="true"></div>
                         <div class="word singularNoun" contenteditable="true"></div>
@@ -35,10 +40,10 @@
                         <div class="word verb" contenteditable="true"></div>
                         <div class="word adverb" contenteditable="true"></div>                            
                     </div>
-                    <button type="submit" id="reformulate">REFORMULATE</button>
-                </section>
+                    <button type="submit" id="reformulate" aria-label="Click to reformulate the sentence">REFORMULATE</button>
+                </main>
 
-            </div>
+
 
             <footer>
                 <p>Copyright © 2023 Dinis Machado</p>
