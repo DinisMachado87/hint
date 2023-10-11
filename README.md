@@ -29,11 +29,15 @@ I tested that the website works in different browsers: Chrome, Firefox, Safari.
 
 I used devtools and [Am I Responsive tester](https://ui.dev/amiresponsive) to confirm that the website is responsive, looks, and functions as it is supposed to on all standard screen sizes.
 
-I tested all the links and confirmed that all of them work and lead where they are supposed to lead.
+I tested thoroughly the button and typing functinalities and fixed all bugs until the app worked smoothly.
 
 ## Bugs
 
-I encountered bugs of adaptation of the navigation bar to different screen formats and have run several series of code editing and testing to solve them.
+I encountered formating bugs where spaces would appear betweens the different div's that form the yellow sentece and corrected them.
+
+I had also to create a independent div to style the red margin to resolve formating issues.
+
+There were bugs in the crossover of the button click both generating random words from the arrays, checking div's had been typed to skip them and reformulating the lay out between the two sceneries of the app. I wanted the app to be extremely minimal to feel spacious for a writers creativity and it took some trial and error to make everything work with only one button.
 
 ### Unsolved bugs
 
@@ -44,6 +48,8 @@ No unsolved bugs.
 ### HTML
 
 No errors or warnings were found when passing through the official W3C validator.
+
+![HTML Validation](documentation/htmlchecker.png)
 
 ### CSS
 
