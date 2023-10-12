@@ -48,73 +48,72 @@ const wordClasses = {
   };
   
   function getRandomWord(wordArray) {
-    let randomIndex = Math.floor(Math.random() * wordArray.length);
+    const randomIndex = Math.floor(Math.random() * wordArray.length);
     return wordArray[randomIndex];
   }
-
+  
+  document.addEventListener("DOMContentLoaded", instructions);
+  
   const instructionsDiv = document.getElementById("instructions");
   const paragraphElements = instructionsDiv.querySelectorAll("p");
-
+  
   function instructions() {
-    let wordDivs = document.querySelectorAll(".word");
+    const wordDivs = document.querySelectorAll(".word");
+  
     wordDivs.forEach(function (div) {
-      let classNames = div.classList; // Get all the classes
+      const classNames = div.classList;
       let wordArray = [];
-      // Iterate through the class names to find the corresponding word class
+  
       classNames.forEach(function (className) {
         if (wordClasses.hasOwnProperty(className)) {
-        div.textContent = "+   " + className;
+          div.textContent = "+   " + className;
         }
-      })
+      });
     });
-        // Change the button text content to "REFORMULATE"
-        let button = document.querySelector("button");
-        button.textContent = "REFORMULATE";
-        instructionsDiv.innerHTML = "<h2>an app for writers and creatives.</h2>" +
-        "<hr>" +
-        "<p>It generates surrealistic fictional sentences to kickstart your writing, overcome writer's block, or engage in playful creative exercises.</p>" +
-        "<p>Type some words to use and press 'REFORMULATE' to complete the sentence.</p>" +
-        "<p>Or simply can click 'REFORMULATE' for a random sentence.</p>";
-      };
   
-
+    const button = document.querySelector("button");
+    button.textContent = "REFORMULATE";
+  
+    instructionsDiv.innerHTML = `
+      <h2>an app for writers and creatives.</h2>
+      <hr>
+      <p>It generates surrealistic fictional sentences to kickstart your writing, overcome writer's block, or engage in playful creative exercises.</p>
+      <p>Type some words to use and press "REFORMULATE" to complete the sentence.</p>
+      <p>Or simply can click "REFORMULATE" for a random sentence.</p>
+    `;
+  }
+  
   function newSentence() {
-    let wordDivs = document.querySelectorAll(".word");
+    const wordDivs = document.querySelectorAll(".word");
+  
     wordDivs.forEach(function (div) {
-      let classNames = div.classList; // Get all the classes
+      const classNames = div.classList;
       let wordArray = [];
-      // Iterate through the class names to find the corresponding word class
+  
       classNames.forEach(function (className) {
         if (wordClasses.hasOwnProperty(className)) {
           wordArray = wordClasses[className];
           return; // Stop searching once a corresponding class is found
         }
       });
-      // Check if the text content is equal to the className
+  
       if (div.textContent === "+   " + classNames[1]) {
-        // Fill the div with a random word from the selected array
         div.textContent = getRandomWord(wordArray);
       }
     });
   
-    // Change the button text content to "RESET"
-    let button = document.querySelector("button");
+    const button = document.querySelector("button");
     button.textContent = "RESET";
     instructionsDiv.innerHTML = "";
-  };
-
-
-
-//formulates a sentence on loading
-document.addEventListener("DOMContentLoaded", instructions);
-
-// Listen to reformulate button and refresh the sentence
-const reformulate = document.getElementById("reformulate"); 
-reformulate.addEventListener("click", function() {
-  let button = document.querySelector("button");
-  if (button.textContent === "RESET") {
-    instructions();
-  } else if (button.textContent === "REFORMULATE") {
-    newSentence();
   }
-});
+  
+  const reformulate = document.getElementById("reformulate");
+  reformulate.addEventListener("click", function () {
+    const button = document.querySelector("button");
+  
+    if (button.textContent === "RESET") {
+      instructions();
+    } else if (button.textContent === "REFORMULATE") {
+      newSentence();
+    }
+  });

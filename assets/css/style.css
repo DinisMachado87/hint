@@ -40,7 +40,7 @@ html, body {
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
     margin-right: 30px;
     position: absolute;
     bottom: 10px;
