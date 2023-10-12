@@ -6,6 +6,10 @@ Hint is an application designed for writers and creatives. It empowers users to 
 
 Users have the flexibility to either generate a sentence composed of random words, resulting in an open-ended and playful narrative, or they can input specific words, combining their choices with randomly selected words to unlock new meanings and creative possibilities.
 
+<br>
+
+[Link to the website](https://dinismachado87.github.io/hint/)
+
 ![Layout](documentation/img1.png)
 ![Layout](documentation/img2.png)
 
@@ -57,13 +61,19 @@ No unsolved bugs.
 
 No errors or warnings were found when passing through the official W3C validator.
 
-![HTML Validation](Documentation/css.png)
+![HTML Validation](documentation/html.png)
 
 ### CSS
 
 No errors or warnings were found when passing through the official W3C (Jigsaw) validator.
 
-![CSS Validation](Documentation/css.png)
+![CSS Validation](documentation/css.png)
+
+### Javascrit 
+
+No errors or warnings were found when passing through the Javascript Jshint validator.
+
+![Jshint validator](documentation/jshint.png)
 
 ### Accessibility and Performance
 
