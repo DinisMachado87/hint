@@ -53,6 +53,7 @@ html, body {
     text-align: center;
     justify-content: space-between;
     z-index: 999;
+    margin-top: 30px;
   }
 
   .capitalized-div {
@@ -99,7 +100,7 @@ html, body {
   }
 
 
-  @media (min-width: 650px) {
+  @media (min-width: 850px) {
     html, body {
       font-size: 18px;
       margin: 18px;
