@@ -13,11 +13,27 @@ Users have the flexibility to either generate a sentence composed of random word
 ![Layout](documentation/img1.png)
 ![Layout](documentation/img2.png)
 
+## Technologies used
+
+- HTML
+- CSS
+- Javascript
+
+
+
 ## Features
+
+![Wireframe](documentation/wireframe.png)
 
 ### Layout
 
-The app boasts a clean and spacious layout, exuding a sense of tranquility and clarity conducive to creativity. With a simple red margin framing the page, it emulates the appearance of a flashcard or a card from classical board games.
+The app boasts a clean and spacious layout, exuding a sense of tranquility and clarity conducive to creativity. 
+
+### Design
+
+With a simple red margin framing the page, it emulates the appearance of a flashcard or a card from classical board games. I used the three primary collors often associated with childhood to activate in the user a feeling of playfulness although contrasted with a minimalist design for a feeling of calm and structure.
+
+![Header](documentation/header.png)
 
 ### Header
 
@@ -26,6 +42,8 @@ The header complements the app's minimalistic design. A simple logo graces the t
 ### Instructions vs Sentence
 
 The app operates in two distinct moments: The first presents a set of straightforward usage instructions in conjunction with the sentence's semantic structure, enabling users to type desired words. In the second moment, words that weren't defined by the user are substituted with random words of the specified type, crafting a coherent and readable although poétic and open ended sentence. In this latter mode, the instructions vanish, providing a minimalistic interface that encourages focus and creativity in writing.
+
+![Footer](documentation/footer.png)
 
 ### Footer
 
@@ -37,11 +55,15 @@ In the future, there are plans to develop a system enabling the app to verify an
 
 ## Testing
 
-I tested that the website works in different browsers: Chrome, Firefox, Safari.
+I tested the website's compatibility with various browsers, including Chrome, Firefox, and Safari.
 
-I used devtools and [Am I Responsive tester](https://ui.dev/amiresponsive) to confirm that the website is responsive, looks, and functions as it is supposed to on all standard screen sizes.
+I utilized developer tools and the Am I Responsive tester to ensure the website's responsiveness and verify that it appears and functions correctly on standard screen sizes.
 
-Extensive testing was conducted on the button and typing functionalities, with any identified bugs addressed to ensure the app's smooth operation.
+Extensive testing was conducted on the button and typing functionalities, with any identified bugs promptly addressed to ensure the app operates smoothly.
+
+I confirmed that JavaScript correctly hides the instructions when generating the final sentence and displays them when resetting.
+
+I also verified that JavaScript accurately identifies the words typed by the user and replaces the remaining words while preserving the typed ones.
 
 ## Bugs
 
@@ -84,6 +106,13 @@ Using Lighthouse in devtools, I confirmed that the website is performing well, a
 ## Deployment
 
 The website was deployed to GitHub pages and can be accessed by the link: [hint](https://dinismachado87.github.io/hint/)
+
+The steps to deploy:
+- Open the Website's GitHub repository
+- Click on the "settings" tab in the upper right corner
+- In the left sidebar menu, click on the "Pages" button
+- Choose the branch that needs to be deployed
+- Click the "save" button
 
 ## Credits
 
